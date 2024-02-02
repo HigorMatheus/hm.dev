@@ -1,6 +1,6 @@
-import {gql, useQuery} from '@apollo/client'
-import React from 'react'
-import {Lesson} from './Lesson'
+import {gql, useQuery} from '@apollo/client';
+import React from 'react';
+import {Lesson} from './Lesson';
 
 const GET_LESSONS_QUERY = gql`
 	query  {
@@ -12,9 +12,9 @@ const GET_LESSONS_QUERY = gql`
 			title
 		}
 	}
-`
+`;
 
-type IGetLessonsQueryResponse = {
+interface IGetLessonsQueryResponse  {
 	lessons: Array<{
 		id: string;
 		availableAt: string;
@@ -23,15 +23,18 @@ type IGetLessonsQueryResponse = {
 		title: string;
 
 	}>;
-};
+}
 export function Sidebar() {
-	const { data } = useQuery<IGetLessonsQueryResponse>(GET_LESSONS_QUERY)
-	console.log({data})
+	const { data 
+	
+	
+	
+	} = useQuery<IGetLessonsQueryResponse>(GET_LESSONS_QUERY);
+	console.log({data});
 
 	return (
 		<aside className='w-[348px] bg-gray-700 p-6 border-l border-gray-600'>
-			<span className='font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block'>
-        Cronograma de aulas
+			<span className='font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block'> Cronograma de aulas
 			</span>
 
 			<div className='flex flex-col gap-8'>
@@ -52,5 +55,5 @@ export function Sidebar() {
 				<Lesson/> */}
 			</div>
 		</aside>
-	)
+	);
 }

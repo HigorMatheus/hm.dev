@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,7 +8,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 
-				sans: 'Roboto sans-serif',
+				sans: 'Roboto, helvetica, sans-serif',
 			},
 			colors: {
 				green: {
@@ -39,4 +38,4 @@ module.exports = {
 		},
 	},
 	plugins: [],
-}
+};

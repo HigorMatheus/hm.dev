@@ -1,5 +1,5 @@
-import React from 'react'
 import {CheckCircle, Lock} from '@phosphor-icons/react'
+
 import { format, isPast } from 'date-fns'
 import { ptBR } from 'date-fns/locale';
 type LessonProps = {
@@ -20,7 +20,7 @@ export function Lesson(props: LessonProps) {
 				{availableDateFormatted}
 			</span>
 
-			<div className='rounded border border-gray-500 p-4 mt-2'>
+			<div className=' border border-gray-500 p-4 mt-2 rounded'>
 				<header className='flex items-center justify-between'>
 					{isLessonAvailable?(
 						<span className='text-sm text-blue-500 font-medium flex items-center gap-2' >
