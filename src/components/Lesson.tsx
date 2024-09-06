@@ -19,7 +19,7 @@ export function Lesson(props: LessonProps) {
 	);
 
 	return (
-		<a href="#">
+		<a href="/#">
 			<span className="text-gray-300">{availableDateFormatted}</span>
 
 			<div className=" border border-gray-500 p-4 mt-2 rounded">
