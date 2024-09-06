@@ -2,7 +2,6 @@ import type * as React from "react";
 
 export function Logo(props: React.SVGProps<SVGSVGElement>) {
 	return (
-		// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
 		<svg
 			width={237}
 			height={34}
