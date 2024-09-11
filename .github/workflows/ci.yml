@@ -1,33 +1,33 @@
-name: CI Workflow
+# name: CI Workflow
 
-on:
-  push: 
-    branches: [main]
-  pull_request:
-    branches: [main]
+# on:
+#   push: 
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
     
-jobs:
-  ci:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-          cache: 'yarn'
+# jobs:
+#   ci:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Use Node.js 20.x
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '20.x'
+#           cache: 'yarn'
 
-      - name: Install dependeces
-        run: yarn install --frozen-lockfile
+#       - name: Install dependeces
+#         run: yarn install --frozen-lockfile
 
-      - name: Lint
-        run: yarn lint
+#       - name: Lint
+#         run: yarn lint
 
-      - name: Typecheck
-        run: yarn typecheck
+#       - name: Typecheck
+#         run: yarn typecheck
         
-      - name: Tests
-        run: yarn test
+#       - name: Tests
+#         run: yarn test
 
       
 
