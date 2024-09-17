@@ -14,19 +14,26 @@
 	"dependencies": {
 		"@apollo/client": "^3.7.10",
 		"@phosphor-icons/react": "^2.0.6",
+		"@radix-ui/react-icons": "^1.3.0",
 		"axios": "^1.4.0",
+		"class-variance-authority": "^0.7.0",
 		"date-fns": "^2.29.3",
 		"graphql": "^16.6.0",
+		"lucide-react": "^0.441.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
+		"@types/node": "^22.5.5",
 		"@types/react": "^18.0.28",
 		"@types/react-dom": "^18.0.11",
 		"@vitejs/plugin-react": "^3.1.0",
 		"autoprefixer": "^10.4.14",
+		"clsx": "^2.1.1",
 		"postcss": "^8.4.21",
+		"tailwind-merge": "^2.5.2",
 		"tailwindcss": "^3.2.7",
 		"typescript": ">=4.4",
 		"vite": "^4.2.0"
