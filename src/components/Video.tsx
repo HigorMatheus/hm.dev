@@ -25,11 +25,11 @@ export const Video: React.FC = () => {
 	};
 
 	return (
-		<div className="flex-1">
+		<div className="flex-1 bg-black">
 			<div className="bg-black flex justify-center">
 				<div className="h-full w-full  max-w-[1100px] max-h-[60vh] aspect-video bg-slate-600" />
 			</div>
-			<div className="p-8 max-w-[1100px] mx-auto">
+			<div className="p-8 max-w-[1100px] mx-auto ">
 				<div className="flex items-start gap-6">
 					<div className="flex-1">
 						<h1 className="text-2xl font-bold">
